@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence>
+  <persistence-unit name="EmployeeService" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>com.me.sample.entity.Employee</class>
+    <properties>
+      <property name="javax.persistence.schema-generation.database.action" value="drop-and-create"/>
+      <property name="javax.persistence.schema-generation.scripts.action" value="drop-and-create"/>
+      <property name="javax.persistence.schema-generation.scripts.create-target" value="module01-create.ddl"/>
+      <property name="javax.persistence.schema-generation.scripts.drop-target" value="module01-drop.ddl"/>
+     
+      <property name="javax.persistence.jdbc.driver" value="oracle.jdbc.OracleDriver"/>
+      <property name="javax.persistence.jdbc.url" value="jdbc:oracle:thin:@127.0.0.1:1521:XE"/>
+      <property name="javax.persistence.jdbc.user" value="system"/>
+      <property name="javax.persistence.jdbc.password" value="admin"/>
+      <property name="eclipselink.logging.level" value="INFO"/>
+    </properties>
+  </persistence-unit>
+  </persistence>

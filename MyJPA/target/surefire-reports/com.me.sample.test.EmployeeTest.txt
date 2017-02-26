@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: com.me.sample.test.EmployeeTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.375 sec <<< FAILURE! - in com.me.sample.test.EmployeeTest
+test(com.me.sample.test.EmployeeTest)  Time elapsed: 0.297 sec  <<< ERROR!
+javax.persistence.PersistenceException: No Persistence provider for EntityManager named EmployeeService
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:85)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:54)
+	at com.me.sample.test.EmployeeTest.init(EmployeeTest.java:21)
+
